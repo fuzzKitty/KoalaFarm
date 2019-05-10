@@ -1,0 +1,42 @@
+<%= form_with(model: koala, local: true) do |form| %>
+  <% if koala.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(koala.errors.count, "error") %> prohibited this koala from being saved:</h2>
+
+      <ul>
+      <% koala.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dob %>
+    <%= form.date_select :dob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_field :colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :character %>
+    <%= form.text_field :character %>
+  </div>
+
+  <div class="field">
+    <%= form.label :favourite_food %>
+    <%= form.text_field :favourite_food %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

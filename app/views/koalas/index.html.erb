@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Koalas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Dob</th>
+      <th>Colour</th>
+      <th>Character</th>
+      <th>Favourite food</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @koalas.each do |koala| %>
+      <tr>
+        <td><%= koala.name %></td>
+        <td><%= koala.dob %></td>
+        <td><%= koala.colour %></td>
+        <td><%= koala.character %></td>
+        <td><%= koala.favourite_food %></td>
+        <td><%= link_to 'Show', koala %></td>
+        <td><%= link_to 'Edit', edit_koala_path(koala) %></td>
+        <td><%= link_to 'Destroy', koala, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Koala', new_koala_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @koala.name %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @koala.dob %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @koala.colour %>
+</p>
+
+<p>
+  <strong>Character:</strong>
+  <%= @koala.character %>
+</p>
+
+<p>
+  <strong>Favourite food:</strong>
+  <%= @koala.favourite_food %>
+</p>
+
+<%= link_to 'Edit', edit_koala_path(@koala) %> |
+<%= link_to 'Back', koalas_path %>

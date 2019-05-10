@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dob: 2019-05-10
+  colour: MyString
+  character: MyString
+  favourite_food: MyString
+
+two:
+  name: MyString
+  dob: 2019-05-10
+  colour: MyString
+  character: MyString
+  favourite_food: MyString
