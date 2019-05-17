@@ -68,7 +68,7 @@ Rails.application.configure do
   config.action_mailer.default_options = {from: 'no-reply@example.com'}
 
   # GMAIL configurations
-  # # CONFIGURE - from: value needs to be configured before deploying
+  # CONFIGURE - needs to be configured before deploying
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       address:              'smtp.gmail.com',

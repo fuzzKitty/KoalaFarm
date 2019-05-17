@@ -33,6 +33,12 @@ class UsersController < ApplicationController
         # format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.html {redirect_to users_url, notice: 'User was successfully created.'}
         format.json {render :show, status: :created, location: @user}
+        # CONFIGURE - needs to be configured before deploying
+        begin
+          UserMailer.welcome_email(@user).deliver_now
+        rescue
+          Rails.logger.debug "Mailer sender paramenters not configured"
+        end
       else
         format.html {render :new}
         format.json {render json: @user.errors, status: :unprocessable_entity}
