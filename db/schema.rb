@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_11_100535) do
+ActiveRecord::Schema.define(version: 2019_05_17_114531) do
 
   create_table "koalas", force: :cascade do |t|
     t.string "name"
@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 2019_05_11_100535) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "is_admin"
+    t.string "email"
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
   end
 
 end
