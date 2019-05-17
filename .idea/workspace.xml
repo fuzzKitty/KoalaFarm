@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97944466-14da-40bd-a8f1-16ad8dcdcb9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-    </list>
+    <list default="true" id="97944466-14da-40bd-a8f1-16ad8dcdcb9b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,13 +244,8 @@
             <path>
               <item name="KoalaFarm" type="b2602c69:ProjectViewProjectNode" />
               <item name="KoalaFarm" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoalaFarm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoalaFarm" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,12 +401,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557504927958</updated>
       <workItem from="1557504930619" duration="2411000" />
-      <workItem from="1557507722928" duration="20301000" />
+      <workItem from="1557507722928" duration="20502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22712000" />
+    <option name="totallyTimeSpent" value="22913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +419,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="114" y="36" width="1311" height="1133" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26950353" />
