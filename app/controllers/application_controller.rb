@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   def restrict_to_admin
     current_user = User.find(session[:user_id]) if session[:user_id]
     unless current_user.is_admin?
-      redirect_to koalas_url, notice: "Admins only!!!"
+      redirect_to koalas_url, notice: 'Admins only!!!'
     end
   end
 
