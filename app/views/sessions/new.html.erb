@@ -12,10 +12,13 @@
       <%= label_tag :password, 'Password' %>
       <%= password_field_tag :password, params[:password] %>
     </div>
+    <br>
     <div>
-      <%= submit_tag 'Login' %>
-      <br>
-      <%= link_to 'Signup', signup_path %>
+      <tr>
+      <th><%= submit_tag 'Login' %></th>
+<!--      <br>-->
+        <th> or, if you are new here... <%= link_to 'Signup', signup_path %></th>
+      </tr>
     </div>
 
   <% end %>
