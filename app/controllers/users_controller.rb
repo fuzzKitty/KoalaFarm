@@ -37,7 +37,7 @@ class UsersController < ApplicationController
         begin
           UserMailer.welcome_email(@user).deliver_now
         rescue
-          Rails.logger.debug "Mailer sender paramenters not configured"
+          Rails.logger.debug 'Mailer sender paramenters not configured'
         end
       else
         format.html {render :new}

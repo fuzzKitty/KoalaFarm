@@ -9,7 +9,11 @@ class PasswordsController < ApplicationController
 
     if user.present?
       user.generate_password_token! #generate pass token
-      # SEND EMAIL HERE
+      begin
+        UserMailer.pw_reset_email(@user).deliver_now
+      rescue
+        Rails.logger.debug 'Mailer sender paramenters not configured'
+      end
       render json: {status: 'ok'}, status: :ok
     else
       render json: {error: ['Email address not found.Please check and try again.']}, status: :not_found
