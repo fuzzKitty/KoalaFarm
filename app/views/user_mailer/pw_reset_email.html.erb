@@ -4,5 +4,7 @@
 <p>
   Here is the code you need to reset your password:
   <%= @user.reset_password_token %><br>
+  Reset your password
+  <%= link_to 'here', passwords_resetform_url %>
 </p>
 <p>Thanks and long live the Koalas!</p>

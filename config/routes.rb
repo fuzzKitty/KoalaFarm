@@ -16,8 +16,10 @@ Rails.application.routes.draw do
     delete 'logout' => :destroy
   end
 
-  post 'password/forgot', to: 'password#forgot'
-  post 'password/reset', to: 'password#reset'
+  get 'passwords/request', to: 'passwords#request_form'
+  get 'passwords/resetform', to: 'passwords#reset_form'
+  post 'passwords/forgot', to: 'passwords#forgot', as: :password_forgot
+  post 'passwords/reset', to: 'passwords#reset'
 
   root 'admin#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

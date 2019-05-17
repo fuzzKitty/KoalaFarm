@@ -1,0 +1,33 @@
+<div>
+  <% if flash[:alert] %>
+    <p id="notice"><%= flash[:alert] %></p>
+  <% end %>
+  <%= form_tag passwords_reset_path do %>
+
+    <legend>Password reset</legend>
+    <br>
+    <div class="field">
+      <%= label_tag :email, 'Email' %>
+      <%= email_field_tag :email, params[:email] %>
+    </div>
+    <div class="field">
+      <%= label_tag :token, 'Token' %>
+      <%= text_field_tag :token, params[:token] %>
+    </div>
+    <div class="field">
+      <%= label_tag :password, 'Password' %>
+      <%= password_field_tag :password, params[:password] %>
+    </div>
+    <div class="field">
+      <%= label_tag :password_confirmation, 'Password confirmation' %>
+      <%= password_field_tag :password_confirmation, params[:password_confirmation] %>
+    </div>
+    <br>
+    <div>
+      <tr>
+        <th><%= submit_tag 'Send' %></th>
+      </tr>
+    </div>
+
+  <% end %>
+</div>

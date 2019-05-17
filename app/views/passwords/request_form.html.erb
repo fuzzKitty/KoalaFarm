@@ -1,0 +1,21 @@
+<div>
+  <% if flash[:alert] %>
+    <p id="notice"><%= flash[:alert] %></p>
+  <% end %>
+  <%= form_tag password_forgot_path do %>
+
+    <legend>Password reset request</legend>
+    <br>
+    <div>
+      <%= label_tag :email, 'email' %>
+      <%= email_field_tag :email, params[:email] %>
+    </div>
+    <br>
+    <div>
+      <tr>
+        <th><%= submit_tag 'Send' %></th>
+      </tr>
+    </div>
+
+  <% end %>
+</div>
